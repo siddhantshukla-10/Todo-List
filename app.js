@@ -15,6 +15,6 @@ app.get('/',function(req,res){
 
 app.use('/api/todos', todoRoutes);  // /api/todos is the prefix of every route
 
-app.listen(3000,function(){
+app.listen((process.env.PORT || 3000),function(){
   console.log("APP is running!!");
 });
